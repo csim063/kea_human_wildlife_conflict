@@ -4,10 +4,10 @@ title: |
 author:
 - name: E.M. Kennedy
   affiliation: Toi-Ohomai Institute of Technology
-- name: C.E. Simpkins
-  affiliation: University of G&ouml;ttingen, University of Auckland
 - name: G.L.W. Perry
   affiliation: University of Auckland
+- name: C.E. Simpkins
+  affiliation: University of G&ouml;ttingen, University of Auckland
 abstract: "Human populations are continuing to expand into previously wild areas, bringing humans and wildlife into conflict. Human-wildlife conflicts often directly result in wildlife mortality events, termed human-induced mortality (HM). While HM is a well known phenomena, its overall impacts at the population-level has not been well studied. HM may interact with other sources of mortality, such as invasive predators, exacerbating both beyond the levels accounted for in conservation management plans. Our study aimed to explore the population-level impacts of changes in HM intensity, and how these impacts would interact with a major known source of mortality. To achieve these aims we developed a stage-based population model to simulate the population dynamics of kea (*Nestor notabilis*), an endangered parrot endemic to New Zealand. We used this model to run multiple scenarios with differing intensity levels of invasive mammalian predation and human-induced mortality. Mammalian predation had the most pronounced impact on kea populations. With unmanaged predation resulting in rapid extinction of the population. HM had a far smaller impact, with the current rate of HM not severely affecting kea population dynamics. However, when HM grew continually over time, simulating increased human populations, the kea population showed significant decreases in population size and extinction risk over time, and this was exacerbated by mammalian predation, even at currently managed levels. These results clearly show that while HM may not be an immediately pressing threat, if left unmanaged it can rapidly become a major issue to conservation management."
 keywords: "conservation; extinction; human-induced mortality; population viability analysis; population dynamics"
 geometry: margin=1in
@@ -24,10 +24,6 @@ output:
     latex_engine: pdflatex
     template: manuscript_style_template.tex
 ---
-
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
-# Add a link to the github repo
-```
 
 ```{r Data Analysis, message=FALSE, warning=FALSE, include=FALSE}
 #-------------------------------------------------------------------------------------------------#
@@ -841,6 +837,6 @@ The model outcomes should be viewed qualitatively, as opposed to quantitatively,
 We thank Finnbar Lee and Andre Bellve for their help in improving the manuscript.
 
 # Data accessibility
-All the data used as well as a reproducible notebook containing the scripts to recreate this paper, including all figures, are available at
+All the data used as well as a reproducible notebook containing the scripts to recreate this paper, including all figures, are available at https://github.com/csim063/kea_human_wildlife_conflict.
 
 # References
