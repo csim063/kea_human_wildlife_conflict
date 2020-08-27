@@ -17,29 +17,19 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #-------------------------------------------------------------------------------------------------#
 
-## Install and/or load all the required packages
-list_of_packages <- c("progress", # get a standard progress bar
-                      "esvis", # calculate hedges_g
-                      "ggpubr", # help create well organised plots
-                      "Hmisc", # summary statistics
-                      "psych", # more summary statistics
-                      "tidyverse", # To help with data manipulation and plotting
-                      "wesanderson", # colours
-                      "plotrix", # improved plotting
-                      "data.table", # improved speed for rbind
-                      "foreach", # To create a for loop that can be parallelized
-                      "doParallel", # to run loops in parallel
-                      "snow" # To register the backend for the parallel loop
-)
-
-get_pkgs <- function(pkg){
-  new_pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-  if (length(new_pkg)) 
-    install.packages(new_pkg, dependencies = TRUE)
-  sapply(pkg, require, character.only = TRUE)
-}
-
-get_pkgs(list_of_packages)
+## Load all the required packages
+library("progress") # get a standard progress bar
+library("esvis") # calculate hedges_g
+library("ggpubr") # help create well organised plots
+library("Hmisc") # summary statistics
+library("psych") # more summary statistics
+library("tidyverse") # To help with data manipulation and plotting
+library("wesanderson") # colours
+library("plotrix") # improved plotting
+library("data.table") # improved speed for rbind
+library("foreach") # To create a for loop that can be parallelized
+library("doParallel") # to run loops in parallel
+library("snow") # To register the backend for the parallel loop
 
 ##~~Import data~~##
 #-------------------------------------------------------------------------------------------------#
