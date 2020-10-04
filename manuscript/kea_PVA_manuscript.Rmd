@@ -1,6 +1,6 @@
 ---
 title: |
-  Additive influence of human-wildlife conflict and introduced mammalian predation on the population dynamics of Kea (*Nestor notabilis*)
+  Additive influence of human-wildlife conflict and introduced mammalian predation on Kea (*Nestor notabilis*) population dynamics
 author:
 - name: E.M. Kennedy
   affiliation: Toi-Ohomai Institute of Technology
@@ -14,15 +14,17 @@ geometry: margin=1in
 fontfamily: mathpazo
 fontsize: 11pt
 bibliography: References/master.bib
-biblio-style: apsr
+csl: taylor-and-francis-council-of-science-editors-author-date.csl
 output: 
+  word_document:
+    toc: false
   pdf_document:
     citation_package: natbib
     keep_tex: true
     fig_caption: true
     toc: false
     latex_engine: pdflatex
-    template: manuscript_style_template.tex
+    template: manuscript_style_template_NZJE.tex
 ---
 
 ```{r Data Analysis, message=FALSE, warning=FALSE, include=FALSE}

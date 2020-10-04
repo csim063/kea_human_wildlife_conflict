@@ -71,9 +71,11 @@ predation on the population dynamics of Kea (\emph{Nestor notabilis})  }
 \titleformat*{\subparagraph}{\normalsize\itshape}
 
 
-\usepackage{natbib}
-\bibliographystyle{apsr}
+%\usepackage{natbib}
+\usepackage[round,sort&compress]{natbib}
+\bibliographystyle{plainnat}
 \usepackage[strings]{underscore} % protect underscores in most circumstances
+\setcitestyle{aysep={}}
 
 
 
@@ -133,6 +135,12 @@ predation on the population dynamics of Kea (\emph{Nestor notabilis})},
 % This should regulate where figures float
 % See: https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
 \usepackage[section]{placeins}
+
+% Formatting for NZJE (I am not a LaTex expert so this may be messy)
+\linespread{1.6}
+
+\usepackage{lineno}
+\linenumbers
 
 
 \begin{document}
